@@ -1,9 +1,9 @@
 from Tkinter import *
-from PIL import Image
+#from PIL import Image
 import os
 import sys
 from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
+#from selenium.webdriver.firefox.options import Options
 
 # create root app
 root = Tk()
@@ -14,16 +14,20 @@ w = root.winfo_screenwidth()/2
 
 # open browser method
 def open_browser(name):
-    options = Options()
-    browser = webdriver.Firefox(firefox_options=options)
-    if name == "netflix":
-        browser.get("https://www.netflix.com")
-    elif name == "hulu":
-        browser.get("https://www.hulu.com")
-    elif name == "amzn":
-        browser.get("https://www.primevideo.com")
-    browser.maximize_window()
-    browser.switch_to_window(browser.current_window_handle)
+	option = webdriver.ChromeOptions()
+	option.accept_untrusted_certs = True
+	option.assume_untrusted_cert_issuer = True
+	option.add_argument("--start-maximized")
+	option.add_argument("--kiosk")
+	browser = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver',chrome_options=option)
+	if name == "netflix":
+		browser.get("https://www.netflix.com")
+	elif name == "hulu":
+		browser.get("https://www.hulu.com")
+	elif name == "amzn":
+		browser.get("https://www.primevideo.com")
+		#browser.maximize_window()
+		#browser.switch_to_window(browser.current_window_handle)
 
 
 # load photos
