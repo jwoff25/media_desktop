@@ -1,0 +1,39 @@
+1539849393771	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0j4sMrU8qfJc"
+1539849395675	Marionette	INFO	Listening on port 46391
+1539849395714	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539849395793	Marionette	DEBUG	[2147483649] Frame script loaded
+1539849395801	Marionette	DEBUG	[2147483649] Frame script registered
+1539849395813	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539849397267	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539849398414	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.netflix.com/jp-en/
+1539849398429	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.netflix.com/jp-en/
+1539849810736	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.1jrNDtnjTYKV"
+1539849813747	Marionette	INFO	Listening on port 34175
+1539849813773	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539849813881	Marionette	DEBUG	[2147483649] Frame script loaded
+1539849813889	Marionette	DEBUG	[2147483649] Frame script registered
+1539849813905	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539849813915	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539849813932	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539849814067	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for about:neterror?e=dnsNotFound&u=https%3A//www.netflix.com/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20www.netflix.com.
+1539849819229	Marionette	INFO	Stopped listening on port 34175
+1539850334626	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.5Unn1rE5XOEr"
+1539850336506	Marionette	INFO	Listening on port 39701
+1539850336571	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539850336631	Marionette	DEBUG	[2147483649] Frame script loaded
+1539850336631	Marionette	DEBUG	[2147483649] Frame script registered
+1539850336643	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539850338047	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539850339178	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.netflix.com/jp-en/
+1539850339612	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.netflix.com/jp-en/
+1539850348013	Marionette	INFO	Stopped listening on port 39701
+1539850432741	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.KyGcHd1acQxB"
+1539850434662	Marionette	INFO	Listening on port 33551
+1539850434760	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539850434827	Marionette	DEBUG	[2147483649] Frame script loaded
+1539850434828	Marionette	DEBUG	[2147483649] Frame script registered
+1539850434839	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539850436259	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539850437198	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.netflix.com/jp-en/
+1539850437441	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.netflix.com/jp-en/
+1539850443775	Marionette	INFO	Stopped listening on port 33551

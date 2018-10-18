@@ -1,6 +1,7 @@
 from Tkinter import *
 from PIL import Image
 import os
+import sys
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 
@@ -22,25 +23,33 @@ def open_browser(name):
     elif name == "amzn":
         browser.get("https://www.primevideo.com")
     browser.maximize_window()
+    browser.switch_to_window(browser.current_window_handle)
 
+
+# load photos
 netflix_logo = PhotoImage(file="netflix-logo-n.png")
 hulu_logo = PhotoImage(file="hulu-logo-n.png")
 amzn_logo = PhotoImage(file="Amazon-Prime-n.png")
 
+# create buttons
 netflix = Button(root, height=h, width=w, command=lambda:open_browser("netflix"))
 hulu = Button(root, height=h, width=w, command=lambda:open_browser("hulu"))
 amzn = Button(root, height=h, width=w, command=lambda:open_browser("amzn"))
-dummy = Button(root)
+dummy = Button(root, command=sys.exit)
 
+# add images to buttons
 netflix.config(image=netflix_logo)
 hulu.config(image=hulu_logo)
 amzn.config(image=amzn_logo)
 
+# map them to rows/cols
 netflix.grid(row=0, column=0, sticky=("N","S","E","W"))
 hulu.grid(row=1, column=0, sticky=("N","S","E","W"))
 amzn.grid(row=0, column=1, sticky=("N","S","E","W"))
 dummy.grid(row=1, column=1, sticky=("N","S","E","W"))
 
-#root.overrideredirect(True)
+# run in kiosk mode
+#root.overrideredirect(True) # add this later
+root.attributes("-fullscreen",True)
 root.geometry("{0}x{1}+0+0".format(root.winfo_screenwidth(), root.winfo_screenheight()))
 root.mainloop()
